@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 | Supported Targets | ESP32 | ESP32-C2 | ESP32-C3 | ESP32-C6 | ESP32-H2 | ESP32-P4 | ESP32-S2 | ESP32-S3 |
 | ----------------- | ----- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
 
@@ -98,3 +99,6 @@ I (619) example: Display LVGL Meter Widget
   * Check the backlight's turn-on level, and update it in `EXAMPLE_LCD_BK_LIGHT_ON_LEVEL`
 
 For any technical queries, please open an [issue] (https://github.com/espressif/esp-idf/issues) on GitHub. We will get back to you soon.
+=======
+# EE404_ECG
+>>>>>>> e9b701deb02e1f247ed5ca1c0f4ae351a7b8cc18
