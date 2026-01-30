@@ -212,6 +212,7 @@ void ecg_read_task(void *arg)
 lv_chart_series_t *ui_Chart1_series_0;
 
 void ecg_chart_task(void *arg)
+
 {
     int32_t ecg_mv;
 
