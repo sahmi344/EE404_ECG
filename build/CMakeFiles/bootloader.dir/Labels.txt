@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+D:/FYP/lvgl_lcd_label_old_ui_new_c3 (1)/lvgl_lcd_label_old_ui_new_c3/build/CMakeFiles/bootloader
+D:/FYP/lvgl_lcd_label_old_ui_new_c3 (1)/lvgl_lcd_label_old_ui_new_c3/build/CMakeFiles/bootloader.rule
+D:/FYP/lvgl_lcd_label_old_ui_new_c3 (1)/lvgl_lcd_label_old_ui_new_c3/build/CMakeFiles/bootloader-complete.rule
+D:/FYP/lvgl_lcd_label_old_ui_new_c3 (1)/lvgl_lcd_label_old_ui_new_c3/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+D:/FYP/lvgl_lcd_label_old_ui_new_c3 (1)/lvgl_lcd_label_old_ui_new_c3/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+D:/FYP/lvgl_lcd_label_old_ui_new_c3 (1)/lvgl_lcd_label_old_ui_new_c3/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+D:/FYP/lvgl_lcd_label_old_ui_new_c3 (1)/lvgl_lcd_label_old_ui_new_c3/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+D:/FYP/lvgl_lcd_label_old_ui_new_c3 (1)/lvgl_lcd_label_old_ui_new_c3/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+D:/FYP/lvgl_lcd_label_old_ui_new_c3 (1)/lvgl_lcd_label_old_ui_new_c3/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+D:/FYP/lvgl_lcd_label_old_ui_new_c3 (1)/lvgl_lcd_label_old_ui_new_c3/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

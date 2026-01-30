@@ -1,0 +1,6 @@
+source "C:/Users/Sahmi/esp/v5.5.2/esp-idf/components/bootloader/Kconfig.projbuild"
+source "C:/Users/Sahmi/esp/v5.5.2/esp-idf/components/esp_app_format/Kconfig.projbuild"
+source "C:/Users/Sahmi/esp/v5.5.2/esp-idf/components/esp_rom/Kconfig.projbuild"
+source "C:/Users/Sahmi/esp/v5.5.2/esp-idf/components/esptool_py/Kconfig.projbuild"
+source "C:/Users/Sahmi/esp/v5.5.2/esp-idf/components/partition_table/Kconfig.projbuild"
+source "D:/FYP/lvgl_lcd_label_old_ui_new_c3 (1)/lvgl_lcd_label_old_ui_new_c3/main/Kconfig.projbuild"

@@ -1,0 +1,28 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "files.associations": {
+    "esp_lcd_ili9341.h": "c",
+    "esp_lcd_panel_vendor.h": "c",
+    "esp_lcd_panel_commands.h": "c",
+    "lvgl.h": "c",
+    "gpio.h": "c"
+  },
+  "idf.adapterTargetName": "esp32",
+  "idf.portWin": "COM5",
+  "idf.flashType": "UART",
+  "idf.customExtraVars": {
+    "OPENOCD_SCRIPTS": "G:\\Espressif\\tools\\openocd-esp32\\v0.12.0-esp32-20230921/openocd-esp32/share/openocd/scripts",
+    "IDF_CCACHE_ENABLE": "1",
+    "ESP_ROM_ELF_DIR": "G:\\Espressif\\tools\\esp-rom-elfs\\20230320/",
+    "IDF_TARGET": "esp32"
+  },
+  "idf.openOcdConfigs": [
+    "board/esp32-wrover-kit-3.3v.cfg"
+  ],
+  "clangd.path": "C:\\Users\\Sahmi\\.espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clangd.exe",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=**",
+    "--compile-commands-dir=c:\\Users\\Sahmi\\Downloads\\FYP\\lvgl_lcd_label_old_ui_new_c3 (1)\\lvgl_lcd_label_old_ui_new_c3\\build"
+  ]
+}
