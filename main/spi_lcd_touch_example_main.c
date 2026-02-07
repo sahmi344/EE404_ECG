@@ -190,12 +190,13 @@ static void button_task(void *arg)
             }
         }
     }
-}//vvncv
+}
+
 
 void ecg_read_task(void *arg)
 {
     int32_t ecg_mv;
-    //djd
+    
     while (1) {
         int16_t raw = ads1115_read_single(I2C_NUM_0, 0);
 
