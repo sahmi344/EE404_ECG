@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "spi_lcd_touch",
-    "project_version":    "bc46a02-dirty",
+    "project_version":    "78a29dc-dirty",
     "project_path":       "D:/FYP/lvgl_lcd_label_old_ui_new_c3 (1)/lvgl_lcd_label_old_ui_new_c3",
     "idf_path":           "C:/Users/Sahmi/esp/v5.5.2/esp-idf",
     "build_dir":          "D:/FYP/lvgl_lcd_label_old_ui_new_c3 (1)/lvgl_lcd_label_old_ui_new_c3/build",

@@ -204,7 +204,7 @@ void ecg_read_task(void *arg)
         ecg_mv = (int32_t)(raw * 0.125f);
 
         // Send to queue (overwrite old value if full)
-        xQueueOverwrite(ecg_queue, &ecg_mv);
+        xQueueSend(ecg_queue, &ecg_mv,0);
 
         vTaskDelay(pdMS_TO_TICKS(5)); // 200 Hz
     }
@@ -228,15 +228,20 @@ void ecg_chart_task(void *arg)
     }
 
     while (1) {
-        // Wait for ECG data
-        if (xQueueReceive(ecg_queue, &ecg_mv, portMAX_DELAY)) {
-
-            if (example_lvgl_lock(-1)) {
+    // Wait for at least one data point
+    if (xQueueReceive(ecg_queue, &ecg_mv, portMAX_DELAY)) {
+        if (example_lvgl_lock(-1)) {
+            lv_chart_set_next_value(ui_Chart1, ui_Chart1_series_0, ecg_mv);
+            
+            // Optional: Check if there are more points and add them while we have the lock
+            while(xQueueReceive(ecg_queue, &ecg_mv, 0)) {
                 lv_chart_set_next_value(ui_Chart1, ui_Chart1_series_0, ecg_mv);
-                lv_chart_refresh(ui_Chart1);
-                example_lvgl_unlock();
             }
-        }
+
+            lv_chart_refresh(ui_Chart1);
+            example_lvgl_unlock();
+             }
+         }
     }
 }
 
@@ -366,7 +371,7 @@ void app_main(void)
     // Lock the mutex due to the LVGL APIs are not thread-safe
     if (example_lvgl_lock(-1)) {
                 ui_init();
-        ecg_queue = xQueueCreate(1, sizeof(int32_t));
+        ecg_queue = xQueueCreate(10, sizeof(int32_t));
         assert(ecg_queue);
 
         xTaskCreate(ecg_read_task,  "ECG_READ",  2048, NULL, 6, NULL);
