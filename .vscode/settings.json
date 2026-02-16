@@ -24,5 +24,6 @@
     "--background-index",
     "--query-driver=**",
     "--compile-commands-dir=c:\\Users\\Sahmi\\Downloads\\FYP\\lvgl_lcd_label_old_ui_new_c3 (1)\\lvgl_lcd_label_old_ui_new_c3\\build"
-  ]
+  ],
+  "idf.currentSetup": "C:\\Users\\Sahmi\\esp\\v5.5.2\\esp-idf"
 }
